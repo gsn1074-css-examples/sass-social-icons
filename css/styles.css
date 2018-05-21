@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.social__container {
+  font-size: 1em; }
+  @media only screen and (min-width: 67.5em) {
+    .social__container {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 105em) {
+    .social__container {
+      font-size: 2em; } }
+
+.social__item {
+  display: inline-block;
+  margin: 0em 0.05em; }
+
+[class^="social__icon"] {
+  position: relative;
+  top: 0;
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+  transition: background-color 150ms ease-in-out, top 250ms linear; }
+  [class^="social__icon"]::before {
+    position: absolute;
+    background-color: #333;
+    font-size: 1rem;
+    display: block;
+    padding: 0.25em 0.5em;
+    top: -3.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: top 250ms linear, opacity 150ms linear 150ms; }
+  [class^="social__icon"]::after {
+    font-size: 1rem;
+    content: '';
+    position: absolute;
+    top: -1.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.5em 0.5em 0 0.5em;
+    border-color: #333 transparent transparent transparent;
+    opacity: 0;
+    transition: top 250ms linear, opacity 150ms linear 150ms; }
+  [class^="social__icon"]:hover, [class^="social__icon"]:focus, [class^="social__icon"]:active {
+    top: -0.25em;
+    box-shadow: 0 0.5em 0.25em -0.25em rgba(0, 0, 0, 0.3); }
+    [class^="social__icon"]:hover::before, [class^="social__icon"]:focus::before, [class^="social__icon"]:active::before {
+      opacity: 1;
+      top: -2.5em; }
+    [class^="social__icon"]:hover::after, [class^="social__icon"]:focus::after, [class^="social__icon"]:active::after {
+      opacity: 1;
+      top: -0.9em; }
+
+[class^="icon--"] {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon--vimeo::before {
+  content: ""; }
+
+.social__icon--vimeo {
+  background-color: #1ab7ea; }
+  .social__icon--vimeo::before {
+    content: "Vimeo"; }
+  .social__icon--vimeo:hover, .social__icon--vimeo:focus, .social__icon--vimeo:active {
+    background-color: #169cc7; }
+
+.icon--twitter::before {
+  content: ""; }
+
+.social__icon--twitter {
+  background-color: #1da1f2; }
+  .social__icon--twitter::before {
+    content: "Twitter"; }
+  .social__icon--twitter:hover, .social__icon--twitter:focus, .social__icon--twitter:active {
+    background-color: #1989ce; }
+
+.icon--facebook::before {
+  content: ""; }
+
+.social__icon--facebook {
+  background-color: #3b5998; }
+  .social__icon--facebook::before {
+    content: "Facebook"; }
+  .social__icon--facebook:hover, .social__icon--facebook:focus, .social__icon--facebook:active {
+    background-color: #324c81; }
+
+.icon--googleplus::before {
+  content: ""; }
+
+.social__icon--googleplus {
+  background-color: #dd4b39; }
+  .social__icon--googleplus::before {
+    content: "Google+"; }
+  .social__icon--googleplus:hover, .social__icon--googleplus:focus, .social__icon--googleplus:active {
+    background-color: #bc4030; }
+
+.icon--pintrest::before {
+  content: ""; }
+
+.social__icon--pintrest {
+  background-color: #bd081c; }
+  .social__icon--pintrest::before {
+    content: "Pintrest"; }
+  .social__icon--pintrest:hover, .social__icon--pintrest:focus, .social__icon--pintrest:active {
+    background-color: #a10718; }
+
+.icon--linkedin::before {
+  content: ""; }
+
+.social__icon--linkedin {
+  background-color: #0077b5; }
+  .social__icon--linkedin::before {
+    content: "LinkedIn"; }
+  .social__icon--linkedin:hover, .social__icon--linkedin:focus, .social__icon--linkedin:active {
+    background-color: #00659a; }
+
+.icon--dribble::before {
+  content: ""; }
+
+.social__icon--dribble {
+  background-color: #ea4c89; }
+  .social__icon--dribble::before {
+    content: "Dribble"; }
+  .social__icon--dribble:hover, .social__icon--dribble:focus, .social__icon--dribble:active {
+    background-color: #c74174; }
+
+.icon--stumbleupon::before {
+  content: ""; }
+
+.social__icon--stumbleupon {
+  background-color: #eb4924; }
+  .social__icon--stumbleupon::before {
+    content: "StumbleUpon"; }
+  .social__icon--stumbleupon:hover, .social__icon--stumbleupon:focus, .social__icon--stumbleupon:active {
+    background-color: #c83e1f; }
+
+.icon--lastfm::before {
+  content: ""; }
+
+.social__icon--lastfm {
+  background-color: #d51007; }
+  .social__icon--lastfm::before {
+    content: "Last.fm"; }
+  .social__icon--lastfm:hover, .social__icon--lastfm:focus, .social__icon--lastfm:active {
+    background-color: #b50e06; }
+
+.icon--instagram::before {
+  content: ""; }
+
+.social__icon--instagram {
+  background-color: #5851db; }
+  .social__icon--instagram::before {
+    content: "Instagram"; }
+  .social__icon--instagram:hover, .social__icon--instagram:focus, .social__icon--instagram:active {
+    background-color: #4b45ba; }
+
+.icon--dropbox::before {
+  content: ""; }
+
+.social__icon--dropbox {
+  background-color: #007ee5; }
+  .social__icon--dropbox::before {
+    content: "Dropbox"; }
+  .social__icon--dropbox:hover, .social__icon--dropbox:focus, .social__icon--dropbox:active {
+    background-color: #006bc3; }
+
+.icon--soundcloud::before {
+  content: ""; }
+
+.social__icon--soundcloud {
+  background-color: #ff8800; }
+  .social__icon--soundcloud::before {
+    content: "Soundcloud"; }
+  .social__icon--soundcloud:hover, .social__icon--soundcloud:focus, .social__icon--soundcloud:active {
+    background-color: #d97400; }
+
+.icon--behance::before {
+  content: ""; }
+
+.social__icon--behance {
+  background-color: #1769ff; }
+  .social__icon--behance::before {
+    content: "Behance"; }
+  .social__icon--behance:hover, .social__icon--behance:focus, .social__icon--behance:active {
+    background-color: #1459d9; }
+
+.icon--skype::before {
+  content: ""; }
+
+.social__icon--skype {
+  background-color: #00aff0; }
+  .social__icon--skype::before {
+    content: "Skype"; }
+  .social__icon--skype:hover, .social__icon--skype:focus, .social__icon--skype:active {
+    background-color: #0095cc; }
+
+.icon--github::before {
+  content: ""; }
+
+.social__icon--github {
+  background-color: #333; }
+  .social__icon--github::before {
+    content: "GitHub"; }
+  .social__icon--github:hover, .social__icon--github:focus, .social__icon--github:active {
+    background-color: #2b2b2b; }
+
+.icon--flickr::before {
+  content: ""; }
+
+.social__icon--flickr {
+  background-color: #0063dc; }
+  .social__icon--flickr::before {
+    content: "Flickr"; }
+  .social__icon--flickr:hover, .social__icon--flickr:focus, .social__icon--flickr:active {
+    background-color: #0054bb; }
+
+.icon--rss::before {
+  content: ""; }
+
+.social__icon--rss {
+  background-color: #f26522; }
+  .social__icon--rss::before {
+    content: "RSS"; }
+  .social__icon--rss:hover, .social__icon--rss:focus, .social__icon--rss:active {
+    background-color: #ce561d; }
